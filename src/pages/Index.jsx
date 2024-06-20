@@ -1,4 +1,5 @@
 import { Container, VStack, Heading, Text, Button, Box, Flex, Spacer } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { FaRunning, FaDumbbell, FaHeartbeat } from "react-icons/fa";
 
 const Index = () => {
@@ -22,7 +23,7 @@ const Index = () => {
           </Box>
         </Flex>
         <Spacer />
-        <Button colorScheme="teal" size="lg">Get Started</Button>
+        <Button as={Link} to="/log-workout" colorScheme="teal" size="lg">Log Workout</Button>
       </VStack>
     </Container>
   );
