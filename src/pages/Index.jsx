@@ -9,21 +9,9 @@ const Index = () => {
         <Heading as="h1" size="2xl" textAlign="center">Fitness Tracker</Heading>
         <Text fontSize="lg" textAlign="center">Track your workouts, monitor your progress, and stay motivated!</Text>
         <Flex width="100%" justifyContent="space-around">
-          <Box textAlign="center">
-            <FaRunning size="3em" />
-            <Text mt={2}>Running</Text>
-          </Box>
-          <Box textAlign="center">
-            <FaDumbbell size="3em" />
-            <Text mt={2}>Strength</Text>
-          </Box>
-          <Box textAlign="center">
-            <FaHeartbeat size="3em" />
-            <Text mt={2}>Cardio</Text>
-          </Box>
+          <Button as={Link} to="/log-workout" colorScheme="teal" size="lg">Log Workout</Button>
+          <Button as={Link} to="/progress" colorScheme="teal" size="lg">View Progress</Button>
         </Flex>
-        <Spacer />
-        <Button as={Link} to="/log-workout" colorScheme="teal" size="lg">Log Workout</Button>
       </VStack>
     </Container>
   );
